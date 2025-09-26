@@ -1,5 +1,6 @@
 package br.com.etec.cinehas.cinehas.entity;
 
+import br.com.etec.cinehas.cinehas.enums.GeneroEnum;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,23 +17,23 @@ public class Filme {
     @Column(name = "TX_NOME")
     private String nome;
     @Column(name = "NR_DURACAO")
-    int duracao;
+    private int duracao;
     @Column(name = "TP_GENERO")
-    String tipoGenero;
+    private GeneroEnum tipoGenero;
     @Column(name = "TP_CLASSIFICACAO")
-    String tipoClassificacao;
+    private String tipoClassificacao;
     @Column(name = "NR_ANO")
-    int nrAno;
+    private int nrAno;
     @Column(name = "TX_CAPA")
-    String txCapa;
+    private String txCapa;
     @Column(name = "TX_DIRETOR")
-    String nomeDiretor;
+    private String nomeDiretor;
     @Column(name = "TX_ELENCO")
-    String elenco;
+    private String elenco;
     @Column(name = "TX_DESCRICAO")
-    String descricao;
+    private String descricao;
     @Column(name = "NR_AVALIACAO")
-    double avaliacao;
+    private double avaliacao;
     @Column(name = "NR_PRECO")
-    double nrPreço;
+    private double nrPreço;
 }
