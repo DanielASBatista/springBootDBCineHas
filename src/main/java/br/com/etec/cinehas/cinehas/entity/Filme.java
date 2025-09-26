@@ -19,6 +19,7 @@ public class Filme {
     @Column(name = "NR_DURACAO")
     private int duracao;
     @Column(name = "TP_GENERO")
+    @Enumerated(EnumType.STRING$)
     private GeneroEnum tipoGenero;
     @Column(name = "TP_CLASSIFICACAO")
     private String tipoClassificacao;
