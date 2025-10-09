@@ -1,11 +1,14 @@
-package br.com.etec.cinehas.cinehas.entity;
+//Daniel Alves - RM:251376
+//Hernan Rodrigo - RM:251169
 
+package br.com.etec.cinehas.cinehas.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
+
 @Entity
 @Table(name = "TBL_ASSENTO")
 

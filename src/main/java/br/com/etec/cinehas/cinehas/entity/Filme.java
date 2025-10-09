@@ -1,5 +1,8 @@
-package br.com.etec.cinehas.cinehas.entity;
+//Daniel Alves - RM:251376
+//Hernan Rodrigo - RM:251169
 
+package br.com.etec.cinehas.cinehas.entity;
+import br.com.etec.cinehas.cinehas.enums.ClassificacaoIndicativaEnum;
 import br.com.etec.cinehas.cinehas.enums.GeneroEnum;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -21,8 +24,8 @@ public class Filme {
     @Column(name = "TP_GENERO")
     @Enumerated(EnumType.STRING)
     private GeneroEnum tipoGenero;
-    @Column(name = "TP_CLASSIFICACAO")
-    private String tipoClassificacao;
+    @Enumerated(EnumType.STRING)
+    private ClassificacaoIndicativaEnum tipoClassificacao;
     @Column(name = "NR_ANO")
     private int nrAno;
     @Column(name = "TX_CAPA")
@@ -36,5 +39,5 @@ public class Filme {
     @Column(name = "NR_AVALIACAO")
     private double avaliacao;
     @Column(name = "NR_PRECO")
-    private double nrPreço;
+    private double nrPreco;
 }
